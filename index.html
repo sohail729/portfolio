@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sohail Khan - Software Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2ecc71;
+            --dark-color: #2c3e50;
+            --light-color: #ecf0f1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--dark-color);
+        }
+
+        /* Header Styles */
+        .header {
+            background: var(--dark-color);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 1rem auto;
+            object-fit: cover;
+        }
+
+        /* Section Common Styles */
+        .section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--dark-color);
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Experience Timeline */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline-item {
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        /* API Integrations */
+        .integrations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 2rem;
+            place-items: center;
+        }
+
+        .integration-logo {
+            height: 50px;
+            filter: grayscale(100%);
+            transition: all 0.3s ease;
+        }
+
+        .integration-logo:hover {
+            filter: grayscale(0%);
+        }
+
+        /* Contact Info */
+        .contact-info {
+            text-align: center;
+            padding: 2rem;
+            background: var(--dark-color);
+            color: white;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 1rem;
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Sohail Khan" class="profile-img">
+        <h1>Sohail Ahmed Khan</h1>
+        <p>Senior Software Engineer</p>
+        <div class="contact-info">
+            <p>Karachi, Pakistan | +92-333-206-9179</p>
+            <p>sohail_khan95@hotmail.com</p>
+            <div class="social-links">
+                <a href="www.linkedin.com/in/sohailak" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <h2 class="section-title">Professional Summary</h2>
+        <p class="summary-text">
+            Experienced Software Engineer with 5.5+ years in developing and optimizing applications for both service
+            and product-based companies. Proficient in LAMP stack with strong background in API integrations.
+        </p>
+    </section>
+<section class="section">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-grid">
+        <!-- Languages & Frameworks -->
+        <div class="skill-category">
+            <h3><i class="fas fa-code"></i> Languages & Frameworks</h3>
+            <div class="skill">
+                <span>PHP</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 95%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Laravel</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>JavaScript</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>ReactJS</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>NodeJS</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Databases & Cloud -->
+        <div class="skill-category">
+            <h3><i class="fas fa-database"></i> Databases & Cloud</h3>
+            <div class="skill">
+                <span>MySQL</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>AWS (DynamoDB, S3, Lambda)</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>RDS</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>NoSQL</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Development Practices -->
+        <div class="skill-category">
+            <h3><i class="fas fa-tools"></i> Development Practices</h3>
+            <div class="skill">
+                <span>RESTful APIs</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 95%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Agile/Scrum</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Git</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>JIRA</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>CI/CD</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    .skill-category {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skill-category:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .skill-category h3 {
+        margin-bottom: 1.5rem;
+        font-size: 1.25rem;
+        color: var(--dark-color);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .skill-category h3 i {
+        color: var(--primary-color);
+    }
+
+    .skill {
+        margin-bottom: 1rem;
+    }
+
+    .skill span {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        color: var(--dark-color);
+    }
+
+    .progress-bar {
+        width: 100%;
+        height: 8px;
+        background: var(--light-color);
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .progress {
+        height: 100%;
+        background: var(--primary-color);
+        border-radius: 5px;
+        transition: width 0.5s ease;
+    }
+</style>
+
+    <section class="section">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Software Engineer @ Blink Co. Technologies</h3>
+                <p>Jun 2022 - Present</p>
+                <ul>
+                    <li>Designed RESTful APIs for system communication</li>
+                    <li>Integrated payment gateway APIs</li>
+                    <li>Collaborated in agile cross-functional teams</li>
+                </ul>
+            </div>
+            <!-- Add other experiences following same pattern -->
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">API Integrations</h2>
+        <div class="integrations-grid">
+            <img src="https://logo.clearbit.com/stripe.com" alt="Stripe" class="integration-logo">
+            <img src="https://logo.clearbit.com/paypal.com" alt="PayPal" class="integration-logo">
+            <img src="https://logo.clearbit.com/shopify.com" alt="Shopify" class="integration-logo">
+            <!-- Add other integration logos -->
+        </div>
+    </section>
+
+    <footer class="contact-info">
+        <p>&copy; 2023 Sohail Ahmed Khan. All rights reserved.</p>
+    </footer>
+</body>
+</html>
